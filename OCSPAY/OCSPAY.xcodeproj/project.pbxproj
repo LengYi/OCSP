@@ -1,0 +1,373 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		585590E11F9DE29900981570 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 585590E01F9DE29900981570 /* AppDelegate.m */; };
+		585590E41F9DE29900981570 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 585590E31F9DE29900981570 /* main.m */; };
+		585590E71F9DE29900981570 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 585590E61F9DE29900981570 /* ViewController.m */; };
+		585590E91F9DE29900981570 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 585590E81F9DE29900981570 /* Assets.xcassets */; };
+		585590EC1F9DE29900981570 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 585590EA1F9DE29900981570 /* Main.storyboard */; };
+		585590F61F9DE6E400981570 /* IRTextFieldDrag.m in Sources */ = {isa = PBXBuildFile; fileRef = 585590F51F9DE6E400981570 /* IRTextFieldDrag.m */; };
+		585590F91F9DEE8500981570 /* OCSPManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 585590F81F9DEE8500981570 /* OCSPManager.m */; };
+		585590FD1F9DFA6200981570 /* SecBase64.c in Sources */ = {isa = PBXBuildFile; fileRef = 585590FB1F9DFA6200981570 /* SecBase64.c */; };
+		585591041F9DFB7500981570 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 585591031F9DFB7500981570 /* Foundation.framework */; };
+		585591081F9ED40200981570 /* SecOCSPRequest.c in Sources */ = {isa = PBXBuildFile; fileRef = 585591051F9ED40200981570 /* SecOCSPRequest.c */; };
+		585591091F9ED40200981570 /* SecOCSPResponse.c in Sources */ = {isa = PBXBuildFile; fileRef = 585591071F9ED40200981570 /* SecOCSPResponse.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		585590DC1F9DE29900981570 /* OCSPAY.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OCSPAY.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		585590DF1F9DE29900981570 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		585590E01F9DE29900981570 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		585590E31F9DE29900981570 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		585590E51F9DE29900981570 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		585590E61F9DE29900981570 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		585590E81F9DE29900981570 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		585590EB1F9DE29900981570 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		585590ED1F9DE29900981570 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		585590F41F9DE6E400981570 /* IRTextFieldDrag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRTextFieldDrag.h; sourceTree = "<group>"; };
+		585590F51F9DE6E400981570 /* IRTextFieldDrag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IRTextFieldDrag.m; sourceTree = "<group>"; };
+		585590F71F9DEE8500981570 /* OCSPManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCSPManager.h; sourceTree = "<group>"; };
+		585590F81F9DEE8500981570 /* OCSPManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCSPManager.m; sourceTree = "<group>"; };
+		585590FB1F9DFA6200981570 /* SecBase64.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = SecBase64.c; sourceTree = "<group>"; };
+		585590FC1F9DFA6200981570 /* SecBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecBase64.h; sourceTree = "<group>"; };
+		585590FE1F9DFA9700981570 /* ocspTemplates.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ocspTemplates.h; sourceTree = "<group>"; };
+		585590FF1F9DFAA000981570 /* SecCFRelease.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecCFRelease.h; sourceTree = "<group>"; };
+		585591001F9DFAA600981570 /* SecInternal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecInternal.h; sourceTree = "<group>"; };
+		585591011F9DFAB900981570 /* SecOCSPRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecOCSPRequest.h; sourceTree = "<group>"; };
+		585591031F9DFB7500981570 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		585591051F9ED40200981570 /* SecOCSPRequest.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = SecOCSPRequest.c; sourceTree = "<group>"; };
+		585591061F9ED40200981570 /* SecOCSPResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecOCSPResponse.h; sourceTree = "<group>"; };
+		585591071F9ED40200981570 /* SecOCSPResponse.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = SecOCSPResponse.c; sourceTree = "<group>"; };
+		5855910A1F9ED60D00981570 /* nameTemplates.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = nameTemplates.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		585590D91F9DE29900981570 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				585591041F9DFB7500981570 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		585590D31F9DE29900981570 = {
+			isa = PBXGroup;
+			children = (
+				585590FA1F9DFA5300981570 /* Ocsp */,
+				585590F31F9DE6DF00981570 /* Classes */,
+				585590DE1F9DE29900981570 /* OCSPAY */,
+				585590DD1F9DE29900981570 /* Products */,
+				585591021F9DFB7500981570 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		585590DD1F9DE29900981570 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				585590DC1F9DE29900981570 /* OCSPAY.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		585590DE1F9DE29900981570 /* OCSPAY */ = {
+			isa = PBXGroup;
+			children = (
+				585590DF1F9DE29900981570 /* AppDelegate.h */,
+				585590E01F9DE29900981570 /* AppDelegate.m */,
+				585590E51F9DE29900981570 /* ViewController.h */,
+				585590E61F9DE29900981570 /* ViewController.m */,
+				585590E81F9DE29900981570 /* Assets.xcassets */,
+				585590EA1F9DE29900981570 /* Main.storyboard */,
+				585590ED1F9DE29900981570 /* Info.plist */,
+				585590E21F9DE29900981570 /* Supporting Files */,
+			);
+			path = OCSPAY;
+			sourceTree = "<group>";
+		};
+		585590E21F9DE29900981570 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				585590E31F9DE29900981570 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		585590F31F9DE6DF00981570 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				585590F41F9DE6E400981570 /* IRTextFieldDrag.h */,
+				585590F51F9DE6E400981570 /* IRTextFieldDrag.m */,
+				585590F71F9DEE8500981570 /* OCSPManager.h */,
+				585590F81F9DEE8500981570 /* OCSPManager.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		585590FA1F9DFA5300981570 /* Ocsp */ = {
+			isa = PBXGroup;
+			children = (
+				5855910A1F9ED60D00981570 /* nameTemplates.h */,
+				585591051F9ED40200981570 /* SecOCSPRequest.c */,
+				585591061F9ED40200981570 /* SecOCSPResponse.h */,
+				585591071F9ED40200981570 /* SecOCSPResponse.c */,
+				585591011F9DFAB900981570 /* SecOCSPRequest.h */,
+				585591001F9DFAA600981570 /* SecInternal.h */,
+				585590FF1F9DFAA000981570 /* SecCFRelease.h */,
+				585590FE1F9DFA9700981570 /* ocspTemplates.h */,
+				585590FB1F9DFA6200981570 /* SecBase64.c */,
+				585590FC1F9DFA6200981570 /* SecBase64.h */,
+			);
+			path = Ocsp;
+			sourceTree = "<group>";
+		};
+		585591021F9DFB7500981570 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				585591031F9DFB7500981570 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		585590DB1F9DE29900981570 /* OCSPAY */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 585590F01F9DE29900981570 /* Build configuration list for PBXNativeTarget "OCSPAY" */;
+			buildPhases = (
+				585590D81F9DE29900981570 /* Sources */,
+				585590D91F9DE29900981570 /* Frameworks */,
+				585590DA1F9DE29900981570 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OCSPAY;
+			productName = OCSPAY;
+			productReference = 585590DC1F9DE29900981570 /* OCSPAY.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		585590D41F9DE29900981570 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = ice;
+				TargetAttributes = {
+					585590DB1F9DE29900981570 = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 585590D71F9DE29900981570 /* Build configuration list for PBXProject "OCSPAY" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 585590D31F9DE29900981570;
+			productRefGroup = 585590DD1F9DE29900981570 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				585590DB1F9DE29900981570 /* OCSPAY */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		585590DA1F9DE29900981570 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				585590E91F9DE29900981570 /* Assets.xcassets in Resources */,
+				585590EC1F9DE29900981570 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		585590D81F9DE29900981570 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				585590FD1F9DFA6200981570 /* SecBase64.c in Sources */,
+				585591091F9ED40200981570 /* SecOCSPResponse.c in Sources */,
+				585591081F9ED40200981570 /* SecOCSPRequest.c in Sources */,
+				585590E71F9DE29900981570 /* ViewController.m in Sources */,
+				585590E41F9DE29900981570 /* main.m in Sources */,
+				585590F91F9DEE8500981570 /* OCSPManager.m in Sources */,
+				585590F61F9DE6E400981570 /* IRTextFieldDrag.m in Sources */,
+				585590E11F9DE29900981570 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		585590EA1F9DE29900981570 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				585590EB1F9DE29900981570 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		585590EE1F9DE29900981570 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		585590EF1F9DE29900981570 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		585590F11F9DE29900981570 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = OCSPAY/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pa.yy.OCSPAY;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		585590F21F9DE29900981570 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = OCSPAY/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pa.yy.OCSPAY;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		585590D71F9DE29900981570 /* Build configuration list for PBXProject "OCSPAY" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				585590EE1F9DE29900981570 /* Debug */,
+				585590EF1F9DE29900981570 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		585590F01F9DE29900981570 /* Build configuration list for PBXNativeTarget "OCSPAY" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				585590F11F9DE29900981570 /* Debug */,
+				585590F21F9DE29900981570 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 585590D41F9DE29900981570 /* Project object */;
+}
