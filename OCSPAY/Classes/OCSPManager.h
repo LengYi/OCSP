@@ -11,6 +11,7 @@
 #pragma mark - CertStatusItem
 @interface CertStatusItem : NSObject
 
+@property(nonatomic, strong) NSString *requestUrl;
 @property(nonatomic, strong) NSString *appName;
 @property(nonatomic, strong) NSString *certID;
 @property(nonatomic, strong) NSString *commonName;

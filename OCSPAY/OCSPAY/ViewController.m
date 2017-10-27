@@ -104,6 +104,7 @@ typedef enum __APPStatus{
     if (statusItem){
         [_logString appendFormat:@"应用名: %@ \n",statusItem.appName];
         [_logString appendFormat:@"公司名称: %@ \n",statusItem.commonName];
+        [_logString appendFormat:@"证书ID: %@ \n",statusItem.certID];
         [_logString appendFormat:@"查询时间: %@ \n",statusItem.thisUpdate];
         [_logString appendFormat:@"证书状态: %@ \n",[statusItem certStatusToString]];
         
@@ -112,6 +113,8 @@ typedef enum __APPStatus{
             [_logString appendFormat:@"撤销原因: %@ \n",[statusItem revocationReasonToString]];
         }
         [_logString appendString:@"\n"];
+        
+        [_logString appendFormat:@"查询请求地址: %@ \n",statusItem.requestUrl];
     }else
     {
         [_logString setString:@""];;

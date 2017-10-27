@@ -140,6 +140,7 @@
                     
                     NSString *appName = [[filePath lastPathComponent]stringByDeletingPathExtension];
                     appName = [appName stringByReplacingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+                    item.requestUrl = urlString;
                     item.appName = appName;
                     item.thisUpdate = [NSString stringWithUTF8String:thisUpdate];
                     item.revocationReason = singleResponse->crlReason;
